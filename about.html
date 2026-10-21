@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас — Кав’ярня «Fox coffee»</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-amber-600">Fox coffee</a>
+            <nav class="hidden md:flex items-center space-x-2">
+                <a href="index.html" class="px-4 py-2 rounded-lg hover:bg-amber-50 transition">Головна</a>
+                <a href="about.html" class="px-4 py-2 rounded-lg bg-amber-500 text-white font-medium">Про нас</a>
+                <a href="services.html" class="px-4 py-2 rounded-lg hover:bg-amber-50 transition">Меню</a>
+                <a href="gallery.html" class="px-4 py-2 rounded-lg hover:bg-amber-50 transition">Галерея</a>
+                <a href="booking.html" class="px-4 py-2 rounded-lg hover:bg-amber-50 transition">Бронювання</a>
+                <a href="contacts.html" class="px-4 py-2 rounded-lg hover:bg-amber-50 transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-white border-b">
+        <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-gray-500">
+            Головна > Про нас
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-6 py-20">
+        <h1 class="text-4xl font-bold mb-8 text-center">Про кав’ярню «Fox coffee»</h1>
+        
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12">
+            <div class="space-y-6 text-gray-700 leading-relaxed">
+                <p>Кав’ярня «Fox coffee» — це затишний куточок у Рівному на вулиці Вишиванка, 47, де на вас завжди чекає ароматна кава та тепла атмосфера. Заклад пропонує відвідувачам смачне капучіно, великий вибір авторських десертів, а також свіжу випічку. Особливістю кав'ярні є наявність пледів та настільних ігор для приємного проведення часу з друзями, а влітку тут відкривається затишне внутрішнє подвір'я.</p>
+                <p>Тут цінують кожного гостя, пропонуючи привітне обслуговування та якісні напої. У кав'ярні можна не лише насолодитися улюбленою кавою на місці, а й обрати кавові зерна додому з можливістю помелу. Затишний інтер'єр робить це місце ідеальним для того, щоб почитати книжку, попрацювати чи відпочити за чашкою запашного напою.</p>
+                <p>Заклад зручно розташований і користується популярністю серед мешканців та гостей міста завдяки високій якості напоїв та гостинній атмосфері. Працюємо щодня, щоб дарувати вам гарний настрій та смачні ласощі.</p>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-center">Наші особливості</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-amber-500">
+                    <h3 class="font-bold text-lg mb-2">Внутрішнє подвір’я</h3>
+                    <p class="text-gray-600">Влітку кав’ярня відкриває власне внутрішнє подвір’я для відпочинку на свіжому повітрі.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-amber-500">
+                    <h3 class="font-bold text-lg mb-2">Пледи та настільні ігри</h3>
+                    <p class="text-gray-600">Для відвідувачів є пледи для прохолодних вечорів та настільні ігри для компаній.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Кав’ярня «Fox coffee»</h3>
+                <p class="text-sm text-gray-400">Затишний куточок у Рівному для ваших найкращих моментів за чашкою кави.</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Контакти</h3>
+                <p class="text-sm text-gray-400 mb-2">вулиця Вишиванка, 47, Рівне</p>
+                <p class="text-sm text-gray-400 mb-2">+380965035809</p>
+                <p class="text-sm text-gray-400">info@fox-coffee.rv.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Години роботи</h3>
+                <p class="text-sm text-gray-400 mb-2">Пн-Пт: 08:00–20:00</p>
+                <p class="text-sm text-gray-400">Сб-Нд: 09:00–20:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
